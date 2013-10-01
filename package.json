@@ -1,11 +1,11 @@
 {
 	"name": "mongoose-watch",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "Mongoose watch documents and querys",
 	"public" : true,
 	"author": "Alejandro Next <alejonext@gmail.com>",
 	"analyze": true,
-	"keywords": ["nodejs", "formage", "mongoose", "plugins", "real-time", "query", "watch" ],
+	"keywords": [ "mongoose", "plugins", "real-time", "query", "watch", "mongodb" ],
 	"license": "GLP v.3",
 	"contributors": [
 		{
@@ -15,7 +15,10 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:alejonext/mongoose-watch.git"
+		"url": "git://github.com/alejonext/mongoose-watch.git"
+	},
+	"bugs": {
+		"url": "https://github.com/alejonext/mongoose-watch/issues"
 	},
 	"engines": {
 		"node": ">=0.10",
