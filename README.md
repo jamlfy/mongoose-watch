@@ -56,3 +56,5 @@ Query.watch( 'inLast', function (start, stop){
 
 ```
 
+
++ Descripcion de la plataforma
