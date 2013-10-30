@@ -1,6 +1,6 @@
 {
 	"name": "mongoose-watch",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Mongoose watch documents and querys",
 	"public" : true,
 	"author": "Alejandro Next <alejonext@gmail.com>",

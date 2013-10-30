@@ -24,12 +24,12 @@ Player.plugin( mongoseeWatch( "inLast" ) );
 We build a query in mongoose, and give one or two parameters a watch.
 ```javascript
 var Query =  Player.find().where()...;
-var watchPlayers = Query.watch( 'inLast' );
+var watchPlayers = Query.watch( 'inLast', new Date() );
 var player = 0;
 
 watchPlayers.start(function (err, doc){
 	if(err) return console.log(err);
-	players = docs.length + players;
+	players = docs.length;
 	console.log(players);
 	if(players === 10 ) watchPlayers.stop();
 });
@@ -44,17 +44,14 @@ Also you can build asynchronously
 var Query = Player.find().where()...;
 var player = 0;
 
-Query.watch( 'inLast', function (start, stop){
+Query.watch( 'inLast', function (err, timer){
 	console.log("Start watch! ");
-	start(function(err, doc){
+	timer.start(1200, function (err, doc){
 		if(err) return console.log(err);
-		players = docs.length + players;
+		players = docs.length;
 		console.log(players);
-		if(players === 10 ) stop();
+		if(players === 10 ) timer.stop();
 	});
 });
 
 ```
-
-
-+ Descripcion de la plataforma
